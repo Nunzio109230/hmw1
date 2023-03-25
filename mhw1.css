@@ -1,0 +1,226 @@
+html{
+    font-size:30px;
+}
+body{
+    margin: 0px;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    width: 100%;
+    margin:auto;
+    align-items: center;
+}
+#inizio{
+    width: 99%;
+    margin:auto;
+    height: 500px;
+    background:url("copertina.jpg");
+    background-repeat: no-repeat;
+}
+
+a{
+    background-color: rgb(134, 66, 41);
+    border-radius: 10px;
+    padding:5px;
+    color: white;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 15px;
+    text-decoration: none; /*per togliere la sottolineature che non mi piace <3 */
+    text-align: center; 
+}
+
+
+#container_overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+#titolo{
+    position: relative;
+    top:50%;
+    width: 780px;
+    margin: auto;
+    text-align: center;
+    color:white;
+    font-family: "Bebas Neue", Georgia;
+    font-size:1.3rem;
+    font-style: normal;
+    text-decoration:overline;
+}
+
+
+#blocco_profilo{
+    position: relative;
+    width: 100%;
+    top:calc(100% - 100px);
+    padding-bottom: 5px;
+}
+
+.icona_profilo{
+    border: 3px solid rgb(226, 223, 223);
+    position: relative;  /*50px è il 10% di 500, quindi dovrebbe essere 90%*/
+    margin: auto;/* sarebbe la larghezza dell'header (viewport) - 50*/
+    border-radius: 100%; 
+    width: 100px;
+    height: 100px;
+}
+
+div h6{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-family:"Lato", Times;
+    font-size: 0.6rem;
+    color:black;
+}
+
+#aggiornamento{
+    font-weight: normal;
+    width: 230px;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    color:rgb(55, 55, 55);
+    border-bottom: 1px solid grey;
+    font-style: italic;
+}
+
+#img_profilo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+section{
+    margin-top: calc(120px + 60px); /*il problema sta nel fatto che il blocco profilo 
+    si trova dentro il blocco header, quindi nel momento in cui inserisco la section
+    considera la distanza dal blocco header e non dal blocco profilo, proprio perchè quest'ultimo si trova
+    dentro l'header. Per ragioni di tempo ho arrangiato la cosa aggiungendo 60px (misura richiesta 
+    dal file) + i 120px che sarebbe la distanza che c'è tra l'header e la fine del blocco profilo */
+    margin-left:auto;
+    margin-right: auto;
+    width: 66.67%;
+}
+
+#flex-container { 
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin:auto;
+  }
+  
+  .flex-item {
+    margin: 2px;
+    width: 80%;
+    margin-top: -60px;
+    margin-bottom: 120px;
+    
+  }
+  
+  .number{
+    position: absolute;
+    bottom:91.5%;
+    margin-left:0px;
+    color:silver;
+    width: 4%;
+    font-family: "PT Sans", Arial;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left:calc (32px - 40px);
+}
+
+.titolo_flex{
+    position: relative;
+    left: 10%;
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: "Mulish";
+    font-weight: bold;
+}
+
+.voto_flex{
+    position:relative;
+    left:10%;
+    bottom:40px;
+    text-align: left;
+    color:rgb(255, 128, 0);
+    font-family: "Cairo",sans-serif;
+    font-size: 0.6rem;
+    font-weight: bold;
+    
+}
+
+#testo{
+    position: relative;
+    left:10%;
+    bottom:calc(58px - 20px);
+    width: 100%;
+    text-align: left;
+    font-weight:lighter;
+    font-size:0.7rem;
+    font-family: "Assistant", 'Times New Roman';
+    color:black;
+}
+
+#blocco_img{
+    margin:0;
+    position: relative;
+    left:10%;
+    bottom:calc(52px - 20px);
+    width: 100%;
+    margin-bottom: -64px;
+}
+
+
+#img{
+    position: relative;
+    width:100%;
+    
+}
+
+@media (max-width:800px){
+    
+    #titolo{
+        width: 100%;
+    }
+
+    .number{
+        left:2%;
+    }
+    
+    section{
+       width: 100%;
+    };
+
+
+}
+
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
+#footer{
+    text-align: center;
+    color:white;
+    font-size: 0.8rem;
+    position: relative;
+    top:50%;
+    font-family:"Oxygen", Arial;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
